@@ -1,0 +1,373 @@
+.homeSlider {
+    overflow-x: hidden;
+    border-bottom: 3px solid $ColorBlue;
+    
+    &__item {
+        position: relative;
+        z-index: 200;
+    }
+    &__img {
+        max-width: 1920px;
+
+    }
+    &__img img {
+        width: 100%;
+        @include funcAdaptiv(height, 600, 700);  
+    }
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.8;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+    &__title {
+        @include funcAdaptiv(font-size, 29, 50);
+        padding: 170px 0 0 0;
+        line-height: 35px;
+    }
+    &__desc {
+        @include funcAdaptiv(font-size, 23, 40);
+        font-style: italic;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    &__price {
+        @include funcAdaptiv(font-size, 28, 40);
+        font-style: italic;
+        color: $ColorRed;
+    }
+}
+.homePrice {
+    &__content {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item-left {
+        background-color: $ColorBlue;
+        text-align: center;
+        padding: 5px;
+    }
+    &__item-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &__item-price {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    &__item-logo {
+        max-width: 80px;
+        margin: 0 auto;
+    }
+    &__item-logo img {
+        width: 100%;
+        height: 50px;
+    }
+    &__item-list {
+        font-size: 16px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: 0 auto;
+        max-width: 280px;
+        @media(max-width: 460px) {
+            max-width: 100%;
+        }
+    }
+    &__item-list li i {
+        font-size: 14px;
+        color: $ColorBlue;
+        padding: 0 5px 0 0;
+    }
+    &__item-button {
+        text-align: center;
+        padding: 20px 0;
+    }
+    &__item-but {
+        padding: 10px 15px;
+    }
+}
+.job {
+    &__carusel {
+        max-width: 1200px;
+    }
+&__item {
+    max-width: 300px;
+}
+    &__img {
+        max-width: 300px;  
+    }
+    &__img img{
+        width: 100%;
+        height: 200px;
+        border-radius: 3px;
+    }
+    &__right {
+        text-align: center;
+    display: flex;
+    flex-direction: column;
+        row-gap: 10px;
+    }
+    &__title {
+        font-size: 22px;
+        padding: 10px 0 0 0;
+    }
+    &__name {
+        font-size: 20px;
+    }
+    &__price {
+        color: $ColorRed;
+        font-size: 18px;
+    }
+    &__button {
+        margin: 20px 0;
+    }
+    &__but {
+        padding: 10px 35px;
+    }
+}
+.faq {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__vop-wrap {
+        background-color: $ColorBlue;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__vop-wrap:hover {
+        cursor: pointer;
+    }
+    &__vopros {
+        text-align: left;
+        outline: none;
+        @include funcAdaptiv(font-size, 16, 20);
+        transition: 0.9s;
+        background-color: $ColorBlue;
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #ffffff;
+    }
+    &__vop-wrap i {
+        padding: 5px;
+        transition: 0.5s all ease 0.5s;    
+    }
+    &__active i {
+        transform: rotate(-45deg);
+    }
+   
+       &__otvet {
+        padding: 0 18px;
+        background-color: inherit;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+  
+}
+.service {
+    &__item {
+        padding: 3px;
+        border-radius: 3px;
+        width: 49%;  
+        @media (max-width: 890px) {
+            width: 100%;
+        }
+    }
+    .bg-bl {
+        padding: 20px;
+        height: 100%;
+        display: flex;
+    flex-direction: column;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__item-left {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &__item-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &__item-desc {
+        padding: 0 20px;
+        flex: 1 1 auto;
+    }
+    &__item-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    &__item-img {
+        max-width: 120px;
+    }
+    &__item-img img {
+        width: 100%;
+        height: 60px;
+    }
+    &__item-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.reviews {
+    &__content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__item {
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .bg-bl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        padding: 10px;
+        @media (max-width: 540px) {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 20px;
+        }
+    }
+    &__img {
+        width: 120px;
+        padding: 3px;
+        border-radius: 100%;
+    }
+    &__img img {
+        width: 100%;
+        height: 120px;
+        border-radius: 100%;
+    }
+    &__right {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template: auto auto auto minmax(70px, auto)/1fr;
+        row-gap: 10px;
+    }
+    &__name {
+        font-size: 25px;
+    }
+    &__job {
+        font-size: 20px;
+        color: $ColorBlue;
+    }
+    &__title {
+        flex: 1 1 auto;
+    }
+}
+.zakSite {
+    &__content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    &__left, &__right {
+        margin: 0 auto;
+        width: 49%;
+        @media(max-width: 1028px) {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+    }
+    .social-list {
+        margin: 40px 0 0 0;
+    }
+#zakSite__animate {
+    width: 600px;
+    height: 300px;
+}
+}
+.blog {
+    &__item {
+        max-width: 300px;
+        margin: 0 auto;
+        @media(max-width: 460px){
+            max-width: 380px;
+        }
+    }
+    &__img {
+        position: relative;
+    }
+    &__img img {
+        width: 100%;
+        height: 200px;
+        border-radius: 3px;
+    }
+    &__autor, &__date {
+        position: absolute;
+        top: 10px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    &__date {
+        left: 10px;
+        background-color: $ColorBlue;
+    }
+    &__autor {
+        right: 10px;
+        background-color: $ColorRed;
+    }
+    &__right {
+        margin: 10px 0 0 0;
+        text-align: center;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template: minmax(50px, auto) minmax(60px, auto) auto/ 1fr;
+        row-gap: 5px;
+    }
+    &__title a {
+        flex: 1 1 auto;
+    }
+    &__title {
+        font-size: 22px; 
+        transition: 0.5s all ease 0.5s;
+    }
+    &__title:hover {
+        color: $ColorBlue;
+    }
+    &__desc {
+        flex: 1 1 auto;
+    }
+    &__button {
+        margin: 20px 0;
+    }
+    &__but {
+        padding: 10px 35px;
+    }
+}

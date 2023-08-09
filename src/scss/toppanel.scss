@@ -1,0 +1,46 @@
+.topPanel {
+    position: relative;
+    margin: 50px 0 20px 0;
+    border-bottom: 3px solid $ColorBlue;
+    &__img {
+        max-width: 1920px;
+    }
+    &__img img {
+        width: 100%;
+        @include funcAdaptiv(height, 250, 350); 
+
+    }
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.8;
+        text-align: center;
+    }
+    &__title {
+        margin: 100px 0 20px 0;
+        @include funcAdaptiv(font-size, 28, 50);
+    }
+    &__breacrumbs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        padding: 20px 0 0 0;
+    }
+    &__breacrumbs li a {
+        transition: 0.5s all ease 0.5s;
+    }
+    &__breacrumbs li a:hover {
+        color: $ColorBlue;
+    }
+    &__breacrumbs  i {
+        transform: rotate(-90deg);
+    }
+    &__breacrumbs-active {
+        color: $ColorBlue;
+    }
+}

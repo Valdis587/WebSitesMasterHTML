@@ -1,0 +1,75 @@
+
+.coupon input, .coupon button {
+   margin: 10px 0;
+}
+.shop_table_responsive {
+   margin: 0 auto;
+}
+.cart_totals h2 {
+   font-size: 18px;
+   margin: 30px 0 10px 0;
+}
+.woocommerce-shipping-calculator {
+   margin: 20px 0 0 0;
+}
+.shipping-calculator-form {
+   margin: 10px 0 0 0;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+}
+.wc-proceed-to-checkout {
+   text-align: center;
+   margin: 50px 0 0 0;
+}
+.qty {
+   width: 50px;
+}
+.shop_table_responsive .attachment-woocommerce_thumbnail, .wishlist_table .attachment-woocommerce_thumbnail {
+   max-width: 50px;
+      height: auto;
+      padding: 4px;
+      line-height: 1.42857143;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+}
+.shop_table_responsive .remove, .wishlist_table .remove {
+   color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+   display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+}
+.wishlist_table .add_to_cart_button {
+padding: 5px 10px;
+   background-color: #337AB7;
+   border-radius: 3px;
+   color: #fff;
+}
+.woocommerce-notices-wrapper {
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+   margin: 0 0 50px 0;
+}
+.woocommerce-cart-form__cart-item {
+   font-size: 18px;
+}
+.wishlist_table tfoot td,
+.wishlist_table tr td.product-name,
+.wishlist_table tr td.product-thumbnail,
+.wishlist_table tr td.wishlist-name,
+.wishlist_table tr td.wishlist-privac {
+   text-align: center;
+}
+.woocommerce-cart-form__cart-item .quantity {
+   font-size: 14px;
+}

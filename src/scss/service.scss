@@ -1,0 +1,53 @@
+.servicePage {
+    margin: 20px auto;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+    
+    &__conten-left, &__conten-right {
+        padding: 5px;
+        @media (max-width: 1020px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__conten-left {
+        width: 49%;
+    }
+    &__conten-right {
+        width: 49%;
+    }
+
+    &__conten-right-title {
+        text-align: center;
+        font-size: 20px;
+    }
+    &__conten-table {
+        padding: 15px 5px 5px 0;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $ColorBlue;
+    }
+    @media(max-width: 840px){ 
+        &__conten-right, &__conten-left {
+            width: 100%;
+        }
+    }
+    &__right {
+      text-align: right;
+    }
+    &__left {
+      text-align: left;
+    }
+    &__content-text {
+        margin: 40px 0 0 0;
+    }
+}
+

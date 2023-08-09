@@ -1,0 +1,72 @@
+@font-face {
+	font-family: icomoon;
+	font-display: swap;
+	src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: ofont;
+	font-display: swap;
+	src: url("../fonts/ofont.woff2") format("woff2"), url("../fonts/ofont.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-angle-double-right:before {
+	content: "\e900";
+  }
+  .icon-angle-down:before {
+	content: "\e901";
+  }
+  .icon-bars:before {
+	content: "\e90d";
+  }
+  .icon-check:before {
+	content: "\e902";
+  }
+  .icon-envelope:before {
+	content: "\e903";
+  }
+  .icon-long-arrow-alt-right:before {
+	content: "\e904";
+  }
+  .icon-map-marker-alt:before {
+	content: "\e905";
+  }
+  .icon-phone-alt:before {
+	content: "\e906";
+  }
+  .icon-plus:before {
+	content: "\e907";
+  }
+  .icon-search:before {
+	content: "\e908";
+  }
+  .icon-skype:before {
+	content: "\e909";
+  }
+  .icon-telegram-plane:before {
+	content: "\e90a";
+  }
+  .icon-viber:before {
+	content: "\e90b";
+  }
+  .icon-whatsapp:before {
+	content: "\e90c";
+  }
+  

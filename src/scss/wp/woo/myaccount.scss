@@ -1,0 +1,222 @@
+.woocommerce {
+   margin: 40px 0;
+ 
+}
+
+.woocommerce-MyAccount-navigation {
+   margin: 50px auto;
+   max-width: 800px;
+   background-color: #F8F8F8;
+   border: 1px solid #E7E7E7;
+   border-radius: 5px;
+}
+.woocommerce-MyAccount-navigation ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 50px;
+   @media (max-width:662px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+   }
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+   font-size: 18px;
+   color: #777777;
+   padding: 0 10px;
+}
+
+.woocommerce-MyAccount-content p {
+   text-align: center;
+   font-size: 16px;
+}
+.woocommerce-Addresses {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   margin: 0 auto 20px auto;
+   @media (max-width:510px) {
+         display: flex;
+         flex-direction: column;
+         row-gap: 10px;
+      }
+}
+.woocommerce-Address {
+   display: flex;
+   flex-direction: column;
+  gap: 20px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 10px;
+   line-height: 20px;
+}
+
+.woocommerce-Address-title  h3{
+   font-size: 18px;
+   margin: 0 0 20px 0;
+}
+.woocommerce-Address-title a {
+   padding: 5px 10px;
+   background-color: #337AB7;
+   border-radius: 3px;
+   color: #fff;
+}
+.woocommerce-Address-title a:hover {
+   background-color: #265C8A;
+}
+
+.woocommerce-EditAccountForm {
+  display: flex;
+  flex-direction: column;
+}
+.woocommerce-form-row {
+   display: flex;
+   flex-direction: column;
+}
+.form-row {
+   display: flex;
+   flex-direction: column;
+   column-gap: 5px;
+}
+.woocommerce-EditAccountForm .clear {
+   display: none;
+}
+.woocommerce-EditAccountForm fieldset legend{
+   margin: 20px 0 0 0;
+ font-size: 20px;
+ width: 100%;
+ text-align: center;
+}
+
+.woocommerce-form-row label {
+font-size: 16px;
+padding: 5px 0 0  0;
+}
+.woocommerce-form-row input {
+   border: 1px solid #b9b9b9;
+   border-radius: 5px;
+   padding: 5px;
+   max-width: 280px;
+   margin: 10px auto;
+   font-size: 14px;
+}
+.woocommerce-form-row--wide span em {
+   font-size: 17px;
+}
+
+.woocommerce-Button {
+      padding: 5px 10px;
+         background-color: $HeadColor;
+         color: #fff;
+         border-radius: 3px;
+         width: 150px;
+      margin: 10px auto;
+      font-size: 14px;
+}
+.woocommerce-form-login {
+  text-align: center;
+  margin: 0 auto 40px auto;
+   max-width: 600px;
+}
+.woocommerce-form-login label {
+   margin: 20px 0 5px 0;
+}
+
+.woocommerce-form-login__submit {
+padding: 5px 10px;
+ background-color: $HeadColor;
+color: #fff;
+border-radius: 3px;
+width: 150px;
+margin: 10px auto;
+}
+.woocommerce-LostPassword {
+   color: #337AB7;
+}
+
+.woocommerce-ResetPassword, .woocommerce-Message {
+   text-align: center;
+}
+.woocommerce-Message .woocommerce-Button {
+   margin: 0 10px 0 0;
+}
+.woocommerce-EditAccountForm .woocommerce-Button {
+   width: 300px;
+}
+
+.woocommerce-orders-table, 
+.woocommerce-cart-form__contents,
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details,
+.woocommerce-grouped-product-list,
+.wishlist_table,
+.woocommerce-product-attributes
+{
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 1rem;
+   background-color: transparent;
+   text-align: center;
+   border: 1px solid #dee2e6;
+}
+.woocommerce-orders-table th,
+.woocommerce-orders-table td, 
+.shop_table_responsive th,
+.shop_table_responsive td,
+.woocommerce-checkout-review-order-table th,
+.woocommerce-checkout-review-order-table td,
+.woocommerce-table--order-details th, 
+.woocommerce-table--order-details td,
+.woocommerce-grouped-product-list th,
+.woocommerce-grouped-product-list td,
+.wishlist_table th,
+.wishlist_table td,
+.woocommerce-product-attributes th,
+.woocommerce-product-attributes td
+{
+   padding: 0.75rem;
+   vertical-align: top;
+   border: 1px solid #dee2e6;
+}
+.woocommerce-orders-table thead th,
+.woocommerce-cart-form__contents thead th,
+.woocommerce-checkout-review-order-table thead th,
+.woocommerce-table--order-details thead th,
+.woocommerce-grouped-product-list thead th,
+.wishlist_table thead th
+{
+   vertical-align: bottom;  
+   background-color: #F8F8F8;
+   border-bottom-width: 2px;
+}
+.woocommerce-orders-table__cell-order-actions a {
+   padding: 5px 10px;
+      background-color: $HeadColor;
+      color: #fff;
+      border-radius: 3px;
+}
+.input-text, .orderby {
+   border: 1px solid #b9b9b9;
+   border-radius: 5px;
+   padding: 5px;
+   width: 100%;
+}
+
+.button,
+.shipping-calculator-button {
+   padding: 5px 10px;
+   background-color: $HeadColor;
+   color: #fff;
+   border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+

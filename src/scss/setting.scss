@@ -1,0 +1,333 @@
+.site-wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: auto;
+}
+.site-body {
+	flex-grow: 1;
+padding: 0 0 20px 0;
+background-color: #151515;
+padding: 20px 0;
+
+}
+.site-body-home {
+	padding: 0 0 20px 0;
+	
+	flex-grow: 1;
+}
+
+.site-body-page {
+	margin: 0 0 20px 0;
+}
+.back-gr {
+	padding: 0 0 3px 0;
+	position: relative;
+	background: linear-gradient(270deg, #F40202 1.72%, #0B14EC 98.04%);
+}
+.back-gr-v {
+	padding: 0 0 3px 0;
+	position: relative;
+	background: linear-gradient(0deg, #F40202 1.72%, #0B14EC 98.04%);
+}
+@keyframes background {
+	50% {
+	  background: #F40202;
+	  box-shadow: 0 -140px 70px -120px #F40202  inset,
+				  0 -210px 70px -120px #0B14EC,
+				  0 -280px 70px -120px rgb(5, 9, 218) inset,
+				  0 -360px 70px -120px #F40202 inset;
+	}
+  }
+  .but-animete {
+	animation: background 4s infinite alternate;
+	border-radius: 3px;
+  }
+.site-button {
+	border-radius: 10px;
+	background: linear-gradient(270deg, #F40202 1.72%, #0B14EC 98.04%);
+}
+.social-list {
+	display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp i, .telegram i, .viber i, .skype i {
+	border: 2px solid #ffffff;
+	padding: 10px;
+	border-radius: 100%;
+	font-size: 20px;
+}
+.whatsapp i {
+	background-color: #29B03E;
+}
+.telegram i, .skype i {
+	background-color: #269FDE;
+}
+.viber i {
+	background-color: #7F48A9;
+}
+
+@keyframes rot{
+	0% {
+	  transform: rotateY(0deg);
+	}
+	50% {
+	  transform: rotateY(360deg);
+	}
+  }
+  @-webkit-keyframes rot {
+	0% {
+	  transform: rotateY(0deg);
+	}
+	50% {
+	  transform: rotateY(360deg);
+	}
+  }
+  .rot-item {
+	animation: 12s rot infinite ease-in-out;
+  }
+ 
+
+  .site-head-title {
+	text-align: center;
+	@include funcAdaptiv(font-size, 30, 40);
+    margin: 50px auto 0 auto; 
+    position: relative;
+	font-weight: 600;
+	line-height: 30px;
+  }
+  .site-head-decription {
+    text-align: center;
+    font-size: 18px;
+    max-width: 850px;
+    margin: 40px auto 50px auto;
+    padding: 0 10px;
+  }
+  .site-head-title::after {
+    content: "";
+    width: 300px;
+    height: 3px;
+    background: linear-gradient(270deg, #F40202 1.72%, #0B14EC 98.04%);
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform:translate(-50%, -5%); 
+  }
+  .cart-item {
+	width: 300px;
+	border-radius: 3px;
+	padding: 3px;
+  }
+  .bg-bl {
+	background-color: #000000;
+  }
+  .web-title {
+	@include funcAdaptiv(font-size, 30, 50);
+	font-weight: 600;
+	font-style: italic;
+	text-align: center;
+  }
+  @keyframes rot-y{
+	0% {
+	  transform: rotateY(0deg);
+	}
+	100% {
+	  transform: rotateY(360deg);
+	}
+  }
+  @-webkit-keyframes rot {
+	0% {
+	  transform: rotateY(0deg);
+	}
+	100% {
+	  transform: rotateY(360deg);
+	}
+  }
+  .rot-preloader {
+	animation: 5s rot-y infinite ease-in-out;
+  }
+.main-title1 {
+	font-size: 20px;
+}
+.main-title {
+	font-size: 18px;
+}
+.main-title2 {
+	font-size: 25px;
+}
+
+.preloader {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: 10000;
+    transition: 2s;
+	overflow: hidden;
+    &__loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.popup {
+	@media (max-width: 460px) {
+		display: none;
+	  }
+	  @media (max-width: 1340px) {
+		left: 80%;
+		transform: translate(-50%, -50%);
+	   }
+	  @media (max-width: 810px) {
+		left: 50%;
+		transform: translate(-50%, -50%);
+	   }
+	position: fixed;
+	width: 310px;
+	height: 150px;
+	left: 80%;
+	top: 87%;
+	z-index: 1000;
+	transform: translate(-10%, -50%);
+	&__item  {
+	   display: flex;
+	  justify-self: flex-end;
+	}
+	&__body {
+	   border-radius: 3px;
+	   width: 310px;
+	   height: 150px;
+	   padding: 3px;
+	   transform: translateY(300px);
+	   opacity: 0;
+	   transition: transform 2s ease 2s;
+	}
+	.pop-open {
+	   transform: translateY(0);
+	   opacity: 1;
+	}
+	&__content {
+	   background-color: #000000;
+	   height: 100%;
+	   padding: 10px;
+	   display: flex;
+	   justify-content: center;
+	   column-gap: 5px;
+	}
+	&__left {
+	   max-width: 120px;
+	}
+	&__left img {
+	   width: 100%;
+	   height: 120px;
+	}
+	&__right {
+	   display: flex;
+	   flex-direction: column;
+	   row-gap: 10px;
+	   text-align: center;
+	}
+	&__title {
+	   font-size: 22px;
+	}
+	&__desc {
+	   color: $ColorRed;
+	   font-size: 18px;
+	}
+	&__button {
+	   padding: 15px 0 0 0;
+	}
+	   &__but {
+		  font-size: 14px;
+		  padding: 10px 12px;
+	   }
+	   &__but i {
+		  padding: 2px;
+		  font-size: 12px;
+	   }
+	   
+	   .popup__show:after {
+		  z-index: -1;
+		  content: '';
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  left: 0;
+		  top: 0;
+		  border-radius: 10px;
+	  }
+	  
+	  @keyframes glowing {
+		  0% { background-position: 0 0; }
+		  50% { background-position: 400% 0; }
+		  100% { background-position: 0 0; }
+	  }
+	  .popup__show:before {
+		  content: '';
+		  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+		  position: absolute;
+		  top: -2px;
+		  left:-2px;
+		  background-size: 400%;
+		  z-index: -1;
+		  filter: blur(15px);
+		  width: calc(100% + 4px);
+		  height: calc(100% + 4px);
+		  animation: glowing 20s linear infinite;
+		  transition: opacity .3s ease-in-out;
+		  border-radius: 10px;
+	  }
+	  &__close {
+	   position: absolute;
+	   z-index: 1;
+	   top: 0;
+	   left: -4px;
+	   background-color: inherit;
+	   transform: rotate(45deg);
+	  }
+	  &__close i {
+	   background-color: $ColorRed;
+	   padding: 5px;
+	   border-radius: 100%;
+	   transition: 0.5s all ease 0.5s;
+	  }
+	  &__close i:hover {
+		background-color: $ColorBlue;
+	  }
+ }
+
+ .back-anim {
+    position: fixed;
+    left: 0;
+    top: 80px;
+   width: 100%;
+    z-index: 4;
+    background-color: #000000;
+   opacity: 0.2;
+}
+.site-animation-wrapper {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+	
+    z-index: 22;
+}
+.site-content-wrapper {
+    position: relative;
+    z-index: 500;
+
+}
+
+
+

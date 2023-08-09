@@ -1,0 +1,101 @@
+.archive {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        @media(max-width: 620px) {
+            flex-wrap: wrap;
+         }
+    }
+    &__left {
+        flex: 1 1 960px;
+        width: 960px;
+        @media(max-width: 620px) {
+            flex: 1 1 100%;
+            width: 100%;  
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__col {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    &__right {
+        flex: 0 0 330px;
+        width: 330px;
+        @media(max-width: 620px) {
+            flex: 1 1 100%;
+            width: 100%;
+        }
+    }
+    .cart-item, .sidebar {
+        @media(max-width: 620px) {
+            margin: 0 auto;
+        }
+    }
+  
+
+    &__paginations {
+        text-align: center;
+        margin: 20px 0;
+    }
+    &__paginations-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &__paginations-list li a {
+        padding: 10px 12px;
+        border-radius: 3px;
+        border: 1px solid $ColorBlue;
+        transition: 0.5s all ease 0.5s;
+    }
+    &__paginations-list li a:hover, &__paginations-list-active {
+        background-color: $ColorBlue;
+    }
+    &__reviews {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+}
+
+.single {
+    &__img {
+        max-width: 960px;
+        @include funcAdaptiv(height, 200, 450);
+    }
+    &__img img {
+        width: 100%;
+        @include funcAdaptiv(height, 200, 450);
+        border-radius: 5px;
+        border: 5px solid $ColorBlue;
+    }
+    &__name {
+        text-align: center;
+        font-size: 30px;
+        color: $ColorBlue;
+    }
+    &__price {
+        text-align: center;
+        font-size: 25px;
+        color: $ColorRed;
+        font-style: italic;
+    }
+    &__button {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    &__but {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+}

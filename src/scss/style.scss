@@ -1,0 +1,41 @@
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/effect-cube.scss";
+@import "node_modules/swiper/modules/effect-coverflow.scss";
+@import "node_modules/swiper/modules/effect-flip.scss";
+@import "node_modules/swiper/modules/effect-fade.scss";
+@import "fonts";
+@import "base/null.scss";
+$minWidth: 320;
+$maxWidthContainer: 1290;
+$padding: 15;
+$HeadColor: #000000;
+$ButtonColor: #337AB7;
+
+$ButtonColor: #337AB7;
+$ColorBorder: #766554;
+
+$ColorRed: #F40202;
+$ColorBlue: #0B14EC;
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+@import "base/mixin";
+
+
+
+@import "wp/wpstyle.scss";
+
+@import"setting";
+
+@import "header";
+@import "home";
+@import "toppanel";
+@import "archive";
+@import "pages";
+@import "service";
+@import "sidebar";
+@import "footer";
